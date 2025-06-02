@@ -1,8 +1,9 @@
 import './App.css';
 import api from './api/axiosConfig';
 import { useState, useEffect } from 'react';
-import Layout from './components/Layout'
-import {Routes, Route} from 'react.router-dom';
+import Layout from './components/Layout';
+import Home from './components/home/Home';
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
 
