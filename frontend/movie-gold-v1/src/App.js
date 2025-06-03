@@ -2,6 +2,7 @@ import './App.css';
 import api from './api/axiosConfig';
 import { useState, useEffect } from 'react';
 import Layout from './components/Layout';
+import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import {Routes, Route} from 'react-router-dom';
 
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* <Header /> */}
 
       <Routes>
           <Route path="/" element={ <Layout/> }>
