@@ -4,9 +4,7 @@ import {useParams} from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
 import ReviewForm from '../reviewForm/reviewForm';
 
-import React from 'react'
-
-const Reviews = ({getMovieData, movie, reviews, setReviews}) => {
+const Reviews = ({ getMovieData, movie, reviews, setReviews }) => {
 
     const revText = useRef();
     let params = useParams();
@@ -24,7 +22,7 @@ const Reviews = ({getMovieData, movie, reviews, setReviews}) => {
         try
         {
             const response = await api.post("/api/v1/reviews", { reviewBody: rev.value, imdbId: movieId });
-
+            
             const updatedReviews = [...reviews, { body: rev.value }];
     
             rev.value = "";
