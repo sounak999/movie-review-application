@@ -14,8 +14,6 @@ function App() {
     try {
       const response = await api.get('/api/v1/movies');
 
-      console.log(response.data)
-
       setMovies(response.data);
 
     } catch (err) {
